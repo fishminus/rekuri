@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REKURI – Making awesome games for awesome people</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">
+    <img src="assets/rekuri_logo.png">
+    <span class="nav-brand">REKURI</span>
+  </div>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="#games"    data-no="Spill"     data-en="Games">Spill</a></li>
+      <li><a href="#about"    data-no="Om oss"    data-en="About">Om oss</a></li>
+      <li><a href="#services" data-no="Tjenester" data-en="Services">Tjenester</a></li>
+    </ul>
+    <div class="lang-toggle" role="group" aria-label="Language">
+      <button class="lang-btn active" data-lang="no" onclick="setLang('no')">NO</button>
+      <button class="lang-btn"        data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────────────────── -->
+<section class="hero scanlines" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">REKURI · rekuri.games</span>
+    <h1 class="hero-title"
+        data-no="<span class='accent'>Fantastiske</span> spill for <span class='accent'>Fantastiske</span> folk."
+        data-en="Making <span class='accent'>awesome</span> games for <span class='accent'>awesome</span> people.">
+      <span class='accent'>Fantastiske</span> spill for <span class='accent'>Fantastiske</span> folk.
+    </h1>
+    <p class="hero-sub"
+       data-no="Vi er et uavhengig norsk spillstudio. Vi lager spill med fokus på kvalitet og autentisitet."
+       data-en="An independent Norwegian game studio. We make games with quality and authenticity.">
+    </p>
+    <div class="hero-ctas">
+      <a href="#games"    class="btn-primary"   data-no="Våre spill"  data-en="Our games">Våre spill</a>
+      <a href="#services" class="btn-secondary"  data-no="Tjenester"   data-en="Services">Tjenester</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── GAMES ─────────────────────────────────────────────── -->
+<section id="games">
+  <div class="container">
+    <div class="games-header reveal">
+      <span class="section-label" data-no="Spill" data-en="Games">Spill</span>
+      <h2 class="section-title"  data-no="Våre spill" data-en="Our games">Våre spill</h2>
+    </div>
+
+    <div class="game-card reveal">
+      <div class="game-card-visual">
+        <img src="assets/drift_af_logo.png">
+      </div>
+      <div class="game-card-info">
+        <span class="game-badge"
+              data-no="Kommer snart · Mobil"
+              data-en="Coming Soon · Mobile">Kommer snart · Mobil</span>
+        <h2 class="game-title">
+          <span class="drift">DRIFT</span><span class="af"> AF</span>
+        </h2>
+        <p class="game-desc"
+           data-no="Top-down drifting-spill — kontrollert med én finger. Lett å lære, vanskelig å mestre. Umulig å legge fra seg. <a href='https://www.youtube.com/@REKURIGAMES' target='_blank' rel='noopener'>Sjekk ut YouTube-kanalen vår for å se mer!</a>"
+           data-en="A top-down arcade drifter built for one-finger control. Easy to learn, hard to master. Hard to put down. <a href='https://www.youtube.com/@REKURIGAMES' target='_blank' rel='noopener'>Check out our YouTube channel to see more!</a>">
+           Top-down drifting-spill — kontrollert med én finger. Lett å lære, vanskelig å mestre. Umulig å legge fra seg. <a href="https://www.youtube.com/@REKURIGAMES" target="_blank" rel="noopener">Sjekk ut YouTube-kanalen vår for å se mer!</a>
+        </p>
+        <div class="game-platforms">
+          <span class="platform-chip">📱 Android</span>
+          <span class="platform-chip">🍎 iOS (planned)</span>
+        </div>
+        <span class="btn-soon"
+              data-no="Lanseres snart"
+              data-en="Launching soon">Lanseres snart</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ──────────────────────────────────────────────── -->
+<div class="about-strip reveal" id="about">
+  <div class="container">
+    <p class="about-tagline"
+       data-no="Vi lager spill vi <span class='accent'>selv</span> vil spille."
+       data-en="We make games <span class='accent'>we</span> want to play.">
+      Vi lager spill vi <span class="accent">selv</span> vil spille.
+    </p>
+    <p class="about-body"
+       data-no="REKURI er et enkeltmannsforetak basert i Norge, drevet av lidenskap for spill og interaktive opplevelser. Vi tror gode spill handler om følelse — kontrollen, farten, øyeblikket. Det er det vi bygger mot."
+       data-en="REKURI is a sole proprietorship based in Norway, driven by a passion for games and interactive experiences. We believe great games are about feel — the control, the speed, the moment. That's what we build for.">
+      REKURI er et enkeltmannsforetak basert i Norge, drevet av lidenskap for spill og interaktive opplevelser. Vi tror gode spill handler om følelse — kontrollen, farten, øyeblikket. Det er det vi bygger mot.
+    </p>
+  </div>
+</div>
+
+<!-- ── SERVICES ──────────────────────────────────────────── -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label" data-no="Tjenester" data-en="Services">Tjenester</span>
+      <h2 class="section-title"  data-no="Andre tjenester" data-en="Other services">Andre tjenester</h2>
+      <p class="section-lead"
+         data-no="Vi tilbyr spesialisert rådgivning for bedrifter innen interaktive og digitale medier."
+         data-en="We offer specialist consulting for businesses working in interactive and digital media.">
+        Vi tilbyr spesialisert rådgivning for bedrifter innen interaktive og digitale medier.
+      </p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <span class="service-icon">🎮</span>
+        <h3 class="service-name"
+            data-no="Interaktive medier"
+            data-en="Interactive media">Interaktive medier</h3>
+        <p class="service-desc"
+           data-no="Konsultasjon innen interaktive medier — fra spilldesignprinsipper anvendt på apper og digitale produkter, til UX som holder brukere engasjerte over tid. Vi driver med alt!"
+           data-en="Consulting within interactive media — from game design principles applied to apps and digital products, to UX that keeps users genuinely engaged over time. We do it all!">
+          Konsultasjon innen interaktive medier — fra spilldesignprinsipper anvendt på apper og digitale produkter, til UX som holder brukere engasjerte over tid. Vi driver med alt!
+        </p>
+        <span class="service-tag" data-no="Konsultasjon" data-en="Consulting">Konsultasjon</span>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">✉️</span>
+        <h3 class="service-name"
+            data-no="Animerte e-postlogoer"
+            data-en="Animated email logos">Animerte e-postlogoer</h3>
+        <p class="service-desc"
+           data-no="Visste du at en animert e-postlogo kan øke åpningsraten din? Vi designer animerte GIF-logoer optimalisert for Gmail og andre e-postklienter — et enkelt og effektivt verktøy for å øke åpningsrate og merkevarekjennskap for små bedrifter."
+           data-en="Did you know that an animated email logo can increase your open rate? We design animated GIF logos optimised for Gmail and other mail clients — a straightforward way for small businesses to increase open rates and brand recognition.">
+          Visste du at en animert e-postlogo kan øke åpningsraten din? Vi designer animerte GIF-logoer optimalisert for Gmail og andre e-postklienter — et enkelt og effektivt verktøy for å øke åpningsrate og merkevarekjennskap for små bedrifter.
+        </p>
+        <span class="service-tag">Logo · GIF · E-post</span>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">💡</span>
+        <h3 class="service-name"
+            data-no="Spilldesign-rådgivning"
+            data-en="Game design consulting">Spilldesign-rådgivning</h3>
+        <p class="service-desc"
+           data-no="Trenger du et ekstra blikk på spillfølelse, onboarding eller spillerengasjement? Vi bidrar med praktisk indie-erfaring for å hjelpe deg å levere noe spillere faktisk elsker."
+           data-en="Need a second perspective on game feel, onboarding, or player engagement? We bring hands-on indie experience to help you ship something players actually love.">
+          Trenger du et ekstra blikk på spillfølelse, onboarding eller spillerengasjement? Vi bidrar med praktisk indie-erfaring for å hjelpe deg å levere noe spillere faktisk elsker.
+        </p>
+        <span class="service-tag" data-no="Spilldesign" data-en="Game design">Spilldesign</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────────── -->
+<div class="contact-strip reveal">
+  <div class="container">
+    <h2 data-no="Ta kontakt" data-en="Get in touch">Ta kontakt</h2>
+    <p data-no="Spørsmål, samarbeid, eller bare lyst til å snakke spill? Vi hører gjerne fra deg."
+       data-en="Questions, collaboration, or just want to talk games? We'd love to hear from you.">
+      Spørsmål, samarbeid, eller bare lyst til å snakke spill? Vi hører gjerne fra deg.
+    </p>
+    <div class="contact-links">
+      <a href="mailto:rekurigames@gmail.com" class="contact-email">rekurigames@gmail.com</a>
+      <a href="https://www.instagram.com/rekurigames/" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Instagram
+      </a>
+      <a href="https://www.youtube.com/@REKURIGAMES" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        YouTube
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand-block">
+      <span class="footer-brand">REKURI</span>
+      <span class="footer-enk">Rønning Games ENK<br/>Org.nr: 937 762 232<br/>rekuri.games</span>
+    </div>
+    <ul class="footer-nav">
+      <li><a href="#games"    data-no="Spill"          data-en="Games">Spill</a></li>
+      <li><a href="#about"    data-no="Om oss"          data-en="About">Om oss</a></li>
+      <li><a href="#services" data-no="Tjenester"       data-en="Services">Tjenester</a></li>
+      <li><a href="privacy.html" data-no="Personvern"   data-en="Privacy policy">Personvern</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-legal" id="copyright-text">© 2025 REKURI · Rønning Games ENK</span>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/rekurigames/" target="_blank" rel="noopener" class="footer-social-icon" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://www.youtube.com/@REKURIGAMES" target="_blank" rel="noopener" class="footer-social-icon" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
