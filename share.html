@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DRIFT AF – Get the game</title>
+<meta name="description" content="Opening DRIFT AF on Google Play…">
+<meta property="og:title" content="DRIFT AF">
+<meta property="og:description" content="Come drift with me. Get DRIFT AF on Google Play.">
+<!-- Fallback redirect if JS is off (3s) -->
+<noscript><meta http-equiv="refresh" content="3;url=https://play.google.com/store/apps/details?id=PLACEHOLDER"></noscript>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#ffffff; --ink:#15151c; --accent:#FF3E6C; --skid:#e9e9ee; --muted:#6b6b78;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  :root:not([data-theme="light"]){}
+  *{box-sizing:border-box}
+  html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+  body{
+    margin:0;height:100%;background:var(--bg);color:var(--ink);
+    font-family:'Archivo',system-ui,sans-serif;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;position:relative;
+  }
+  /* tire skid marks */
+  .skid{position:absolute;inset:0;pointer-events:none}
+  .skid svg{width:100%;height:100%}
+  .skid path{fill:none;stroke:var(--skid);stroke-width:26;stroke-linecap:round;
+    stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 1.6s cubic-bezier(.2,.7,.2,1) .1s forwards}
+  .skid path:nth-child(2){animation-delay:.2s}
+  @keyframes draw{to{stroke-dashoffset:0}}
+ 
+  main{position:relative;text-align:center;padding:24px;width:min(560px,100%)}
+  .logo{
+    font-family:'Archivo Black',Impact,sans-serif;font-size:clamp(64px,19vw,132px);
+    line-height:.85;letter-spacing:-.03em;margin:0;
+    transform:skewX(-12deg) rotate(-4deg);
+    animation:slide .7s cubic-bezier(.15,.9,.2,1) both;
+  }
+  .logo span{display:block}
+  .logo .af{color:var(--accent);margin-left:.5em}
+  @keyframes slide{from{transform:translateX(-120%) skewX(-30deg) rotate(-4deg);opacity:0}}
+  /* swap in the real logo: <img class="logo-img" src="https://rekuri.games/assets/drift_af_logo.png" alt="DRIFT AF"> */
+  .logo-img{max-width:100%;height:auto}
+ 
+  .status{margin:34px 0 10px;font-weight:700;font-size:17px}
+  .bar{height:5px;width:180px;margin:0 auto 34px;background:var(--skid);border-radius:9px;overflow:hidden}
+  .bar i{display:block;height:100%;width:100%;background:var(--accent);transform-origin:left;
+    animation:fill 2.5s linear forwards}
+  @keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+ 
+  .links{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:320px;margin:0 auto}
+  .btn{
+    display:flex;align-items:center;gap:14px;padding:14px 20px;border-radius:14px;
+    text-decoration:none;font-weight:700;font-size:16px;text-align:left;
+    border:2px solid var(--ink);color:var(--ink);background:#fff;
+    transition:transform .15s,box-shadow .15s;
+  }
+  .btn:hover,.btn:focus-visible{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--accent);outline:none}
+  .btn.primary{background:var(--ink);color:#fff}
+  .btn svg{width:26px;height:26px;flex:none}
+  .btn small{display:block;font-weight:500;font-size:12px;opacity:.7}
+  .btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+ 
+  @media (prefers-reduced-motion:reduce){
+    .logo,.skid path,.bar i{animation:none!important}
+    .skid path{stroke-dashoffset:0}
+  }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]){--bg:#ffffff} /* brand is white on purpose */
+  }
+</style>
+</head>
+<body>
+ 
+<div class="skid" aria-hidden="true">
+  <svg viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice">
+    <path d="M-100 900 C 250 880, 450 700, 560 520 S 800 120, 1100 60"/>
+    <path d="M-100 960 C 280 950, 500 790, 620 590 S 860 190, 1100 130"/>
+  </svg>
+</div>
+ 
+<main>
+  <!-- Replace the text wordmark with your logo image if you like -->
+  <h1 class="logo" aria-label="DRIFT AF"><span>DRIFT</span><span class="af">AF</span></h1>
+ 
+  <p class="status" id="status">Taking you to Google Play…</p>
+  <div class="bar" aria-hidden="true"><i></i></div>
+ 
+  <nav class="links" aria-label="Get DRIFT AF">
+    <a class="btn primary" id="play" href="https://play.google.com/store/apps/details?id=PLACEHOLDER">
+      <!-- Google Play logo -->
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#00d2ff" d="M3.6 1.6 13.4 12 3.6 22.4a2 2 0 0 1-.6-1.5V3.1c0-.6.2-1.1.6-1.5z"/>
+        <path fill="#00f076" d="M17 8.6 13.4 12 3.6 1.6c.5-.4 1.2-.4 1.9 0L17 8.6z"/>
+        <path fill="#ff3a44" d="M17 15.4 5.5 22.4c-.7.4-1.4.4-1.9 0L13.4 12 17 15.4z"/>
+        <path fill="#ffd500" d="m21 10.8-4 2.4V8.6l4 2.4c.7.4.7 1.1 0 1.5z" transform="translate(0 -.2)"/>
+        <path fill="#ffd500" d="M17 8.6v6.8L13.4 12 17 8.6z" opacity=".0"/>
+        <path fill="#ffd500" d="m17 8.6 4 2.4c.5.3.5 1.1 0 1.4l-4 2.9L13.4 12 17 8.6z"/>
+      </svg>
+      <span><small>Get it on</small>Google Play</span>
+    </a>
+    <a class="btn" href="https://rekuri.games">
+      <!-- Rekuri / website icon -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3 3 16.5 0 19M12 2.5c-3 3-3 16.5 0 19"/>
+      </svg>
+      <span><small>More games by</small>rekuri.games</span>
+    </a>
+  </nav>
+</main>
+ 
+<script>
+  var PLAY_URL = "https://play.google.com/store/apps/details?id=PLACEHOLDER"; // <-- put your real link here
+  document.getElementById("play").href = PLAY_URL;
+  //setTimeout(function(){ window.location.replace(PLAY_URL); }, 2500);
+</script>
+</body>
+</html>
