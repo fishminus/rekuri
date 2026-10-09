@@ -1,1 +1,10 @@
+# app-ads.txt for rekuri.games
+#
+# Made by salvador
+#
+# Repo: https://github.com/fishminus/rekuri
+
+OWNERDOMAIN=rekuri.games
+
+# ---- Google AdMob ----
 google.com, pub-2663961277770673, DIRECT, f08c47fec0942fa0
